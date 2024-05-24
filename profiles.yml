@@ -5,7 +5,7 @@ snowflake_demo_3:
       type: snowflake
       account: ho73550.ca-central-1.aws
       user: NGOCDBT
-      password: zeckIw-vanzu4-hydbeh
+      password: 
       role: accountadmin
       database: dbt_demo_3
       warehouse: DV_PROTOTYPE_WH
