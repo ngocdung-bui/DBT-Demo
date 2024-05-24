@@ -1,0 +1,26 @@
+version: 2
+
+sources:
+  - name: src_stg_tickets
+    database: dbt_demo_3
+    schema:  demo 
+    tables:
+      - name: raw_stg_tickets
+
+models:
+  - name: stg_tickets
+    description: "stg load"
+    tests:
+      - dbt_utils.expression_is_true:
+          expression: "passengers > 0"
+    columns: 
+      - name: passengers
+        tests: 
+          - not_null 
+
+    config:
+      tags: load_stg_tkt 
+  - name: tickets
+    description: "pre-core load"
+    config:
+      tags: precore_load       

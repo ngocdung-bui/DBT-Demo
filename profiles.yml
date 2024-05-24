@@ -1,0 +1,14 @@
+snowflake_demo_3:
+  target: dev
+  outputs:
+    dev:
+      type: snowflake
+      account: ho73550.ca-central-1.aws
+      user: NGOCDBT
+      password: zeckIw-vanzu4-hydbeh
+      role: accountadmin
+      database: dbt_demo_3
+      warehouse: DV_PROTOTYPE_WH
+      schema: DEMO
+      threads: 4
+      client_session_keep_alive: False

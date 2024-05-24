@@ -1,0 +1,7 @@
+version: 2
+
+analyses:
+  - name: total_revenue 
+    description: showing revenue 
+    config:
+      tags: total_revenue 

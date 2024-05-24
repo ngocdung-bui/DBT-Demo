@@ -1,0 +1,8 @@
+version: 2
+
+seeds:
+  - name: seed_tickets
+    config:
+      enabled: true
+      tags: tickets 
+      alias: stg_tickets
